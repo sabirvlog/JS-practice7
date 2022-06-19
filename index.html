@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css"
 	 href="style.css">
-	<title>Loops- JavaScript Tutorial #06</title>
+	<title>Loops- JavaScript Tutorial #07</title>
 </head>
 <body>
 	
@@ -24,12 +24,14 @@
 				document.write("The number is at index:--- ",count, "<br>");
 
 				}
+		*/		
 // For loop......using decrement operator.....
-	*/			
+				
+	/*
 				for (var count = 20; count >= 1; count--) {
 					document.write(count, "<br>");
 				}
-		
+	*/	
 
 		// while loop......using decrement operator.....
 /*
@@ -39,11 +41,86 @@
 				document.write("The value is.... ", age , "<br>");
 				age--;
 			}
+*/			
 
 		// while loop......using Increment operator.....
+/*
+			var no = 0;
+			while(no <= 20)
+		
+			 {
+				if (no%2 == 0) //for storing even numbers...
+				{
+					document.write("Even numbers are: "+ no + " <br>");
+					// alert(no);
+			}
+			no++;
+*/				
 
-			// var
-		*/	
+				//for storing odd numbers...
+		/*	
+
+		{
+				else (no%2 != 0) 
+				{
+					document.write("odd numbers are... "+ no + " <br>");
+		}
+				 no++;
+
+ } 
+ */
+ 		// DO while loop using increment operator........
+
+ 	/*
+ 			var num = 1;
+ 			do
+ 			{
+ 				document.write("Numbers are: ... "+ num + "<br>");
+ 				num++;
+ 			}
+ 			while(num <= 15);
+ 	*/	
+
+		// DO while loop using decrement operator........
+
+			/*
+			var num = 50;
+ 			do
+ 			{
+ 				document.write("Numbers are: ... "+ num + "<br>");
+ 				num--;
+ 			}
+ 			while(num > 25);
+ 		*/	
+
+ // **********************ForEach-Loop Function*********************
+
+ 			var cars= ["Mercedes","Toyota","Hounda","Cultus","Farari","Vigo","Mehran","APV_van" ];
+
+ 			cars.forEach(car);
+ 			// function car(item){
+ 			// function car(array){
+ 			function car(item,index,array){  // three arguments are written in.
+ 				
+ 				// Item = ("means Car name like Car1 or Mercedes") required..
+ 				// Index = (like 0 for first car and so on) optional...
+ 				// Array = (means cars variable in which all values are stored) it's optional.....
+
+ 				// document.write(item"<br/>");
+ 				// document.write(array + "<br>");
+ 				// document.write(index+" => "+ item+ " <br/> ");
+ 				array[index] = item+ " Car";
+ 			}
+ 			//After overwriting we will write another function fron start...
+ 			
+ 			cars.forEach(after);
+ 			function after(item,index){
+ 				document.write(index+ " => " + item +"<br>")
+ 			}
+
+ 	// ForEach loop is used to get data from JS Array or object...
+ 	
+
 		</script>
 
 </html>		
